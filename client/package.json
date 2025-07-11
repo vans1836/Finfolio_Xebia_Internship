@@ -35,8 +35,8 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "yahoo-finance2": "^2.13.3",
-    "yup": "^0.32.11",
-    "proxy": "https://query1.finance.yahoo.com"
+    "yup": "^0.32.11"
+   
 
   },
   "scripts": {
