@@ -1,6 +1,10 @@
+// src/api/fetchInsights.js
+
+const API_BASE = process.env.REACT_APP_API_BASE_URL || "http://localhost:3001";
+
 export const fetchInsights = async (symbols = []) => {
   try {
-    const res = await fetch(`http://localhost:3001/api/quotes?symbols=${symbols.join(",")}`);
+    const res = await fetch(`${API_BASE}/api/quotes?symbols=${symbols.join(",")}`);
     const data = await res.json();
 
     return data.map((s) => ({
